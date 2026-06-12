@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMZ Data — Trend Signals</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <header>
+    <h1>🐾 AMZ Data</h1>
+    <span class="subtitle">Pet Supplies Trend Signals</span>
+  </header>
+
+  <main>
+    <section class="product-info" id="product-info">
+      <p class="placeholder">Open an Amazon Pet Supplies product page to see trend signals.</p>
+    </section>
+
+    <section class="signals" id="signals" style="display:none;">
+      <h2>TrendScore</h2>
+      <div class="trendscore-big" id="trendscore-big">--</div>
+
+      <h2>Signal Breakdown</h2>
+      <div class="signal-grid" id="signal-grid"></div>
+
+      <h2>Category Context</h2>
+      <div id="category-context"></div>
+
+      <div class="cta">
+        <a href="https://amzdata.com/tools/trend-scanner" target="_blank" class="btn-primary">
+          Open Full Analysis →
+        </a>
+      </div>
+    </section>
+
+    <section class="footer-note">
+      <p>Data refreshes weekly. <a href="https://amzdata.com" target="_blank">amzdata.com</a></p>
+    </section>
+  </main>
+
+  <script src="panel.js"></script>
+</body>
+</html>
