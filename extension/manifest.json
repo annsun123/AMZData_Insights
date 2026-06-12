@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "AMZ Data — Pet Supplies Trend Signals",
+  "version": "0.1.0",
+  "description": "Overlay trend signals on Amazon Pet Supplies product pages. TrendScore, Google Trends, Reddit signals — at a glance.",
+  "permissions": ["sidePanel", "storage"],
+  "host_permissions": [
+    "https://www.amazon.com/*/dp/*",
+    "https://www.amazon.com/s?*",
+    "https://amzdata.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.com/*"],
+      "js": ["content/inject.js"],
+      "css": ["content/inject.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "side_panel": {
+    "default_path": "sidebar/panel.html"
+  },
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
