@@ -1,0 +1,7 @@
+/* Minimal — badge is styled inline for isolation from Amazon's CSS */
+#amzdata-trend-badge {
+  transition: opacity 0.2s ease;
+}
+#amzdata-trend-badge:hover {
+  opacity: 0.85;
+}
